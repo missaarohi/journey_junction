@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey junction</title>
+    <link rel="stylesheet" href="s1.css">
+    <link rel="stylesheet" href="s1.1.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="icon" type="image/x-icon" href="img/favicon_io/android-chrome-192x192.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <header class="header">
+        <a href="#" class="logo"><img src="img/logo2-removebg-preview.png" alt=""></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icon">
+            <i class='bx bx-menu-alt-left' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index1.2.html">About us</a>
+            <a
+                href="https://www.google.com/maps/place/India/@19.7239166,60.9545331,4z/data=!3m1!4b1!4m6!3m5!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288!16zL20vMDNyazA?entry=ttu">India
+                map</a>
+            <button onclick="openForm()">Experience</button>
+            <!-- <a href="">Experience</a> -->
+        </nav>
+    </header>
+    <div class="outer-box" id="myForm">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Signup</h1>
+                <p>If you want you can share your Experience with us..
+                </p>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <!-- <label for="fullname">Full Name</label> -->
+                    <p>Name:</p>
+                    <input type="text" id="Fullname" placeholder="" required>
+                    </p>
+                    <p>
+                        <!-- <label for="email">Your Email</label> -->
+                    <p>Gmail:</p>
+                    <input type="email" id="email" placeholder="" required>
+                    </p>
+                    <p>
+                        <!-- <label for="password">Experience</label> -->
+                    <p>Experience</p>
+                    <input type="text" id="password" placeholder="share..." required>
+                    </p>
+                    <p>
+                        <button id="btn">Submit</button>
+                    </p>
+                </form>
+            </main>
+
+            <footer class="signup-footer">
+                <button type="button" onclick="closeForm()">Close</button>
+                <p>skip this is page<a href="index1.3.html">Next</a> </p>
+            </footer>
+
+        </div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+
+    <div class="video-wrapper">
+        <video playsinline autoplay muted loop poster="cake.jpg">
+            <source src="img/WhatsApp Video 2023-10-27 at 7.19.56 AM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="search-bar" placeholder="Search cities">
+                <img src="img/ashoka-removebg-preview.png"  id="bharat" alt="">
+                <button id="search-button"><i class='bx bx-search-alt'></i></button>
+            </div>
+            <div class="result-box">
+            </div>
+        </div>
+        <ul id="results">
+
+        </ul>
+        <!-- <div class="header">
+      <h1>Blueberry Cheesecake</h1>
+      <button>Recipe here</button>
+    </div> -->
+    </div>
+
+    <!--   
+<section id="home">
+        <h1 class="h-primary">
+            welcome to Journey junction
+        </h1>
+       
+      
+    </section>  -->
+
+    <section class="services-conainer">
+        <h1 class="h-primary center">Explore Regions </h1>
+        <div class="res" id="services">
+            <a href="mumbai.html">
+                <div class="box box1">
+                    <!-- <img src="img/boats-2758962_1920.jpg" alt=""> -->
+                    <h2>Mumbai</h2>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quas autem est voluptates ducimus
+                        maxime quia perferendis sunt iste. Nesciunt eaque accusantium unde consequatur doloribus saepe
+                        quiatempore quaerat obcaecati.</p> -->
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                    </button></a> -->
+                </div>
+            </a>
+            <a href="rajasthan.html">
+                <div class="box box2">
+                    <!-- <img src="img/beach-1236581_1920.jpg" alt=""> -->
+                    <h2>Rajasthan</h2>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quas autem est voluptates ducimus
+                        maxime quia perferendis sunt iste. Nesciunt eaque accusantium unde consequatur doloribus saepe
+                        quiatempore quaerat obcaecati.</p> -->
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i> -->
+                    </button>
+                </div>
+            </a>
+            <a href="goa.html">
+                <div class="box box3">
+                    <!-- <img src="img/india-5994184_1920.jpg" alt=""> -->
+                    <h2>Goa</h2>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quas autem est voluptates ducimus
+                        maxime quia perferendis sunt iste. Nesciunt eaque accusantium unde consequatur doloribus saepe
+                        quiatempore quaerat obcaecati.</p> -->
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                    </button>  -->
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="a">
+        <h1 class="h">Famous places in india</h1>
+        <div class="res2" id="aa">
+            <a href="arunachal pradesh.html">
+                <div class="boxa">
+                    <img src="img/aru.jpg" alt="">
+                    <h3>Arunachal pradesh</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/assam.jpg" alt="">
+                    <h3>Assam</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/bihar.jpg" alt="">
+                    <h3>Bihar</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/chhatisgarg.jpg" alt="">
+                    <h3>Chattisgarh</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <section class="a">
+        <!-- <h1 class="h">famous places in india</h1> -->
+        <div class="res2" id="aa">
+            <a href="">
+                <div class="boxa">
+                    <img src="img/haryana.jpg" alt="">
+                    <h3>Harayana</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/himachal.jpg" alt="">
+                    <h3>Himachal</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/kerla.jpg" alt="">
+                    <h3>kerla</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/beach-1236581_1920.jpg" alt="">
+                    <h3>Madhya Pradesh</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a -->
+
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="a">
+        <!-- <h1 class="h">famous places in india</h1> -->
+        <div class="res2" id="aa">
+            <a href="">
+                <div class="boxa">
+                    <img src="img/karnataka.jpg" alt="">
+                    <h3>Karnataka</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/nagaland.jpg" alt="">
+                    <h3>Nagaland</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/punjab.jpg" alt="">
+                    <h3>Punjab</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/odisha.jpg" alt="">
+                    <h3>odisha</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="a">
+        <!-- <h1 class="h">famous places in india</h1> -->
+        <div class="res2" id="aa">
+            <a href="">
+                <div class="boxa">
+                    <img src="img/meghalya.jpg" alt="">
+                    <h3>Meghalaya</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/andra pradesh.jpg" alt="">
+                    <h3>Andra pradesh</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/sikkim.jpg" alt="">
+                    <h3>sikkim</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+            <a href="">
+                <div class="boxa">
+                    <img src="img/uttar pradesh.jpg" alt="">
+                    <h3>uttar pradesh</h3>
+                    <!-- <a href="homw1.html"><button><i class='bx bxs-chevron-right'></i>
+                 </button></a> -->
+                </div>
+            </a>
+        </div>
+    </section>
+    <hr>
+    <hr>
+    <br>
+    <p style="text-align: center; font-size: 1.5rem;">You could follow us on those platform for making your trip more
+        exciting and loveable</p>
+    <footer class="wrapper">
+        <div class="icons facebook">
+            <div class="tooltip">
+                Facebook
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=61554883164990"><span> <i class="fab fa-facebook"></i></span></a>
+        </div>
+
+        <div class="icons instagram">
+            <div class="tooltip">
+                Instagram
+            </div>
+            <a href="https://www.instagram.com/journeyjunction181607/"><span> <i class="fab fa-instagram"></i></span></a>
+        </div>
+
+        <div class="icons twitter">
+            <div class="tooltip">
+                Twitter
+            </div>
+            <a href="https://twitter.com/journeyjuncti0n"><span> <i class="fab fa-twitter"></i></span></a>
+        </div>
+
+        <div class="icons youtube">
+            <div class="tooltip">
+                Youtube
+            </div>
+            <span> <i class="fab fa-youtube"></i></span>
+        </div>
+    </footer>
+</body>
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+<script src="search.js"></script>
+
+</html>
